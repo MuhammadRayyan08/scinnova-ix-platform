@@ -1,87 +1,69 @@
-# 🏆 SCINNOVA IX — Official Science Olympiad Web Platform
+# SCINNOVA IX — Science Olympiad Platform & Showcase
 
-[![Organization: Cedar College](https://img.shields.io/badge/Institution-Cedar_College-green?style=for-the-badge)]()
-[![Society: Cedar CODES](https://img.shields.io/badge/Society-Cedar_CODES-blue?style=for-the-badge)]()
-[![Award: Honorary Shield](https://img.shields.io/badge/Distinction-Honorary_Award_Shield-gold?style=for-the-badge)]()
-[![Animation: GSAP 3](https://img.shields.io/badge/Motion-GSAP_3.12_%2F_ScrollTrigger-88CE02?style=for-the-badge&logo=greensock&logoColor=white)]()
+[![Event: SCINNOVA IX](https://img.shields.io/badge/Olympiad-SCINNOVA_IX-blue?style=flat-square)]()
+[![Institution: Cedar College](https://img.shields.io/badge/Institution-Cedar_College-green?style=flat-square)]()
+[![Platform: Web Showcase](https://img.shields.io/badge/Platform-Full--Stack_Web-orange?style=flat-square)]()
+[![License: Open Documentation](https://img.shields.io/badge/Documentation-Public-teal?style=flat-square)]()
 
-Official digital gateway and interactive platform engineered for **SCINNOVA IX**—Cedar College's 9th International Inter-School Science Olympiad held in Karachi, Pakistan. 
-
-Awarded the **Honorary Award Shield** and **Certificate of Recognition** on stage by Event Patron **Sir Rayyan Dawood** for sole technical architecture and design execution.
+Official web portal engineered for **SCINNOVA IX**, the annual inter-school and collegiate Science Olympiad hosted by Cedar College, Karachi.
 
 ---
 
-## 🎖️ Institutional Commendation & Recognition
+## Role & Recognition
 
-<div align="center">
-  <img src="Scinnova%20IX%20Photo.jpeg" width="450" alt="Honorary Shield presented by Patron Sir Rayyan Dawood" />
-  <p><em>Honorary Award Shield presented by Patron Sir Rayyan Dawood on stage during the SCINNOVA IX Grand Closing Ceremony</em></p>
-  <br />
-  <img src="Scinnova%20IX.png" width="450" alt="Certificate of Recognition" />
-  <p><em>Official Cedar College Certificate of Recognition for Technical Architecture</em></p>
-</div>
+* **Role:** Lead Web Architect & Developer
+* **Patron:** Sir Rayyan Dawood (Patron of Scinnova)
+* **Scope:** Conceived and engineered the complete event web platform showcasing scientific competition modules, rulebooks, event schedules, Q&A repositories, and external registration gateway links.
+* **Recognition:** Awarded an **Honorary Shield for Outstanding Contribution as Web Developer** by Olympiad Patron Sir Rayyan Dawood.
 
----
+### Recognition Shield
 
-## 🏛️ Platform Mission & Event Overview
+| Front View | Angled View |
+| :---: | :---: |
+| <img src="award-shield-front.jpg" width="340" alt="Award Shield Front"> | <img src="award-shield-angle.jpg" width="340" alt="Award Shield Angle"> |
 
-SCINNOVA IX is one of Pakistan's premier high school science competitions, convening hundreds of delegates across competing schools. The event required an immersive, modern web experience to showcase complex tournament modules, rules, schedule timelines, and FAQs.
-
-### Competitive STEM Modules Featured:
-1. **Arcanum (Chemical Sciences):** High-stakes laboratory puzzles and qualitative analysis.
-2. **Asclepius (Biological & Medical Sciences):** Clinical diagnostic rounds and emergency medicine simulations.
-3. **Redshift (Astrophysics & Cosmology):** Orbital mechanics, stellar evolution, and deep-space physics.
-4. **Ptolemy's Puzzle (Mathematics & Logic):** Combinatorics, number theory, and algorithmic problem-solving.
+*Inscription:*  
+> **"SCINNOVA IX — Presented to Rayyan Muhammad in recognition of your outstanding contribution as Web Developer at SCINNOVA IX. Your passion, commitment, and hard work have made this event truly memorable."**  
+> *Patron: Rayyan Dawood*
 
 ---
 
-## 🛠️ Frontend Motion Architecture & Performance
+## Architecture Pipeline
 
 ```mermaid
 flowchart TD
-    subgraph Viewport & Smooth Scroll
-        LENIS[Studio Freight Lenis / Inertial Scroll Engine]
-        NOISE[Custom Canvas Noise & Cursor DOT Engine]
-        WRAP[Smooth Scroll DOM Wrapper]
-        LENIS --> WRAP
+    subgraph Visitors [Competitors & Delegations]
+        USER[Delegates & Faculty Advisors]
     end
 
-    subgraph Motion Graphics Pipeline [GSAP 3.12]
-        ST[ScrollTrigger / Hardware Accelerated Milestones]
-        TP[TextPlugin / Dynamic Typography Shifts]
-        PARTICLES[Canvas Confetti / Celebration Particles]
-        ST --> WRAP
-        TP --> WRAP
+    subgraph Presentation Tier [Web Platform]
+        HOME[Olympiad Landing Page]
+        MODS[12+ Competition Module Portfolios]
+        SCHED[Real-Time Round Timetable]
+        FAQ[Interactive Rules & Q&A Hub]
+        REG[Registration Gateway Router]
     end
 
-    subgraph Responsive Layout Modules
-        HERO[Hero Gateway & Event Countdown]
-        MODULES[Interactive Competition Directories]
-        FAQS[Dynamic Accordion & Rule Breakdown]
-        REG[Registration Routing & Link Gateways]
-    end
-
-    WRAP --> HERO
-    WRAP --> MODULES
-    WRAP --> FAQS
-    WRAP --> REG
+    USER --> HOME
+    HOME --> MODS
+    HOME --> SCHED
+    HOME --> FAQ
+    HOME --> REG
 ```
 
-### Engineering Highlights:
-* **Zero-Framework Vanilla JS Engine:** Built with semantic HTML5, modular CSS3, and modern ES6+ to avoid framework bundle bloat and ensure instantaneous initial contentful paint (FCP < 0.8s).
-* **Inertial Smooth Scrolling (`Lenis`):** Normalized scroll mechanics across Mac, Windows, iOS, and Android to guarantee consistent interaction physics.
-* **Scroll-Driven Milestones (`GSAP ScrollTrigger`):** Pinned sections and scrubbed timeline animations that reveal module details as delegates navigate through the site.
-* **120Hz Mobile Frame-Rate Tuning:** Converted layout animations to use GPU-accelerated CSS `transform` and `opacity` properties, maintaining a sustained 60+ FPS across low-to-mid range mobile viewports.
+---
+
+## Core Technical Highlights
+
+* **Module Information Engine:** Dynamic breakdown of scientific challenges across Physics, Chemistry, Biology, Robotics, and Astronomy with downloadable guideline documents.
+* **Rules & Q&A Knowledge Base:** Structured query portal answering delegate queries regarding team formats, judging criteria, and lab safety protocols.
+* **Event Dispatching:** Managed incoming traffic surges during city-wide school registration drives, routing candidates to verified submission channels.
+* **Responsive Viewports:** Multi-device layout optimized for mobile delegates checking match schedules and room assignments on-site during competition days.
 
 ---
 
-## 📁 Repository Contents
+## Tech Stack
 
-* `Scinnova IX Photo.jpeg`: High-resolution photograph of the Honorary Award Shield.
-* `Scinnova IX.png`: High-resolution scan of the Cedar College Certificate of Recognition.
-* `README.md`: Event specifications, motion architecture, and engineering review.
-
----
-
-## 📄 License
-Documented and published under the [MIT License](LICENSE).
+* **Frontend:** Modern HTML5, CSS3, JavaScript
+* **Styling:** Responsive Grid & Flexbox, Tailwind CSS
+* **Hosting:** High-availability CDN deployment
