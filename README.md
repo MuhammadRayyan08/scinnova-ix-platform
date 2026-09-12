@@ -1,20 +1,20 @@
-# SCINNOVA IX — Science Olympiad Platform & Showcase
+# SCINNOVA IX — Science Olympiad Web Platform
 
 [![Event: SCINNOVA IX](https://img.shields.io/badge/Olympiad-SCINNOVA_IX-blue?style=flat-square)]()
 [![Institution: Cedar College](https://img.shields.io/badge/Institution-Cedar_College-green?style=flat-square)]()
-[![Platform: Web Showcase](https://img.shields.io/badge/Platform-Full--Stack_Web-orange?style=flat-square)]()
+[![Platform: Web Showcase](https://img.shields.io/badge/Platform-Vanilla_JS_%2F_GSAP-orange?style=flat-square)]()
 [![License: Open Documentation](https://img.shields.io/badge/Documentation-Public-teal?style=flat-square)]()
 
-Official web portal engineered for **SCINNOVA IX**, the annual inter-school and collegiate Science Olympiad hosted by Cedar College, Karachi.
+Official web portal engineered for **SCINNOVA IX**, the annual inter-school Science Olympiad hosted by Cedar College, Karachi.
 
 ---
 
 ## Role & Recognition
 
-* **Role:** Lead Web Architect & Developer
+* **Role:** Sole Web Developer & Designer (from initial UI design to final deployment)
 * **Patron:** Sir Rayyan Dawood (Patron of Scinnova)
-* **Scope:** Conceived and engineered the complete event web platform showcasing scientific competition modules, rulebooks, event schedules, Q&A repositories, and external registration gateway links.
-* **Recognition:** Awarded an **Honorary Shield for Outstanding Contribution as Web Developer** by Olympiad Patron Sir Rayyan Dawood.
+* **Scope:** Independently built the entire event website showcasing competition modules, competition rulebooks, event schedules, FAQs, and delegate registration links.
+* **Recognition:** Awarded the **Honorary Shield for Outstanding Contribution as Web Developer** by Olympiad Patron Sir Rayyan Dawood.
 
 ### Recognition Shield
 
@@ -28,20 +28,20 @@ Official web portal engineered for **SCINNOVA IX**, the annual inter-school and 
 
 ---
 
-## Architecture Pipeline
+## Site Structure
 
 ```mermaid
 flowchart TD
-    subgraph Visitors [Competitors & Delegations]
-        USER[Delegates & Faculty Advisors]
+    subgraph Visitors [Delegates & Schools]
+        USER[Student Competitors & Faculty Advisors]
     end
 
-    subgraph Presentation Tier [Web Platform]
-        HOME[Olympiad Landing Page]
-        MODS[12+ Competition Module Portfolios]
-        SCHED[Real-Time Round Timetable]
-        FAQ[Interactive Rules & Q&A Hub]
-        REG[Registration Gateway Router]
+    subgraph Web Platform [SCINNOVA IX Website]
+        HOME[Landing Page & Event Highlights]
+        MODS[Competition Categories & Modules]
+        SCHED[Event Timetable & Venues]
+        FAQ[Rules & Common Questions]
+        REG[Registration Links]
     end
 
     USER --> HOME
@@ -53,17 +53,22 @@ flowchart TD
 
 ---
 
-## Core Technical Highlights
+## Technical Highlights
 
-* **Module Information Engine:** Dynamic breakdown of scientific challenges across Physics, Chemistry, Biology, Robotics, and Astronomy with downloadable guideline documents.
-* **Rules & Q&A Knowledge Base:** Structured query portal answering delegate queries regarding team formats, judging criteria, and lab safety protocols.
-* **Event Dispatching:** Managed incoming traffic surges during city-wide school registration drives, routing candidates to verified submission channels.
-* **Responsive Viewports:** Multi-device layout optimized for mobile delegates checking match schedules and room assignments on-site during competition days.
+* **Performance & Motion:** Built with vanilla JavaScript, GSAP ScrollTrigger, and Lenis smooth scrolling for smooth transitions without heavy framework overhead.
+* **Module Showcase:** Structured directories detailing STEM competition categories (*Arcanum*, *Asclepius*, *Redshift*, *Ptolemy's Puzzle*) with round criteria and team parameters.
+* **Responsive Layout:** Designed for mobile and desktop screens to ensure competing delegates could check schedules and announcements live during the tournament.
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** Modern HTML5, CSS3, JavaScript
-* **Styling:** Responsive Grid & Flexbox, Tailwind CSS
-* **Hosting:** High-availability CDN deployment
+* **Frontend:** Semantic HTML5, Modular CSS3, Vanilla JavaScript (ES6+)
+* **Animation & Scrolling:** GSAP (ScrollTrigger, TextPlugin), Studio Freight Lenis
+* **Assets:** WebP image optimization
+
+---
+
+## Notice
+
+Event logos, participant imagery, and Cedar College Olympiad assets are published for portfolio documentation.
